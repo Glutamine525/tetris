@@ -267,14 +267,14 @@
                 <nav id="go" class="menu">
                     <div class="btn-container btn-container-bottom">
                         <a class="btn" onclick="init(gametype,gameparams)"
-                            >Retry 再来</a
+                            >Retry</a
                         >
                         <div class="btn-line">
                             <a
                                 class="btn btn-inline"
                                 onclick="init('replay')"
                                 style="width: 50%;"
-                                >Replay 回放
+                                >Replay
                             </a>
                             <a
                                 class="btn btn-inline"
@@ -286,46 +286,42 @@
                         <a
                             class="btn highlight"
                             onclick="menu(5,1);this.classList.remove('highlight')"
-                            >Rankings 排行</a
+                            >Rankings</a
                         >
-                        <a class="btn" onclick="menu(0)">Back 回菜单</a>
+                        <a class="btn" onclick="menu(0)">Back</a>
                     </div>
                 </nav>
 
                 <nav id="pause" class="menu">
                     <div class="btn-container btn-container-bottom">
-                        <a class="btn" onclick="unpause()">Resume 继续</a>
+                        <a class="btn" onclick="unpause()">Resume</a>
                         <a class="btn" onclick="init(gametype,gameparams)"
-                            >Retry 重来</a
+                            >Retry</a
                         >
-                        <a class="btn" onclick="menu(0)">Back 回菜单</a>
+                        <a class="btn" onclick="menu(0)">Back</a>
                     </div>
                 </nav>
 
                 <div id="leader" class="menu">
-                    <h2>Rankings 排行</h2>
+                    <h2>Rankings</h2>
 
                     <div id="leaderboard"></div>
                     <div style="clear: both;">
-                        <a class="btn" onclick="menu(void 0,-1)">Back 返回</a>
+                        <a class="btn" onclick="menu(void 0,-1)">Back</a>
                     </div>
                 </div>
 
                 <nav id="replay" class="menu">
-                    <h2>Replay 回放数据</h2>
+                    <h2>Replay</h2>
 
-                    <p>Ctrl+C 复制 / Ctrl+V 粘贴</p>
+                    <p>Ctrl+C / Ctrl+V</p>
                     <textarea id="replaydata" spellcheck="false"></textarea>
                     <ul>
                         <li>
-                            <a class="btn" onclick="tryreplaydata()"
-                                >Watch 观看</a
-                            >
+                            <a class="btn" onclick="tryreplaydata()">Watch</a>
                         </li>
                         <li>
-                            <a class="btn" onclick="menu(void 0,-1)"
-                                >Back 返回</a
-                            >
+                            <a class="btn" onclick="menu(void 0,-1)">Back</a>
                         </li>
                     </ul>
                 </nav>
